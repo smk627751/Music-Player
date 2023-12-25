@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="./script.js" defer></script>
+    <script src="https://kit.fontawesome.com/28c9b452c3.js" crossorigin="anonymous"></script>
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="player">
+        <img src="./assets/logo.png">
+        <div class="details">
+            <span id="song">song name</span>
+            <span id="artist">artist</span>
+        </div>
+        <audio id="audio"></audio>
+        <div id="progress-bar">
+            <div id="thumb"></div>
+            <div id="current-progress"></div>
+        </div>
+        <div class="controls">
+            <div id="prev">
+                <i class="fa-solid fa-backward-step"></i>
+            </div>
+            <div id="play">
+                <i id="playPause" class="fa-solid fa-play"></i>
+            </div>
+            <div id="next">
+                <i class="fa-solid fa-forward-step"></i>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

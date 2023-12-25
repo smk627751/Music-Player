@@ -1,0 +1,27 @@
+[
+    {
+        "song":"3 - Bgm Instrumental",
+        "artist":"Anirudh Ravichandar",
+        "src":"./assets/audio/3 - Bgm ! Anirudh Ravichander ! Instrumental.mp3"
+    },
+    {
+        "song":"3 - Tamil",
+        "artist":"Anirudh Ravichandar",
+        "src":"./assets/audio/3 - Tamil - Bgm.mp3"
+    },
+    {
+        "song":"3 movie - Anirudh Ravichander",
+        "artist":"Anirudh Ravichandar",
+        "src":"./assets/audio/3 movie - Anirudh Ravichander.mp3"
+    },
+    {
+        "song":"3 Movie - Tamil",
+        "artist":"Anirudh Ravichandar",
+        "src":"./assets/audio/3 Movie - Tamil.mp3"
+    },
+    {
+        "song":"3 Movie Bgm Tamil",
+        "artist":"Anirudh Ravichandar",
+        "src":"./assets/audio/3 Movie Bgm Tamil.mp3"
+    }
+]
