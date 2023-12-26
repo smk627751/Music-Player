@@ -1,27 +1,26 @@
 [
     {
-        "song":"3 - Bgm Instrumental",
-        "artist":"Anirudh Ravichandar",
-        "src":"./assets/audio/3 - Bgm ! Anirudh Ravichander ! Instrumental.mp3"
+      "title": "Life in Rio",
+      "artist": "Crazy Mano, NUEKI, and Slowboi",
+      "image": "./assets/Life in Rio.jpeg",
+      "path":"./assets/audio/Life in Rio.mp3"
     },
     {
-        "song":"3 - Tamil",
-        "artist":"Anirudh Ravichandar",
-        "src":"./assets/audio/3 - Tamil - Bgm.mp3"
+      "title": "Moondeity X Interworld",
+      "artist": "Ivan Belozerov",
+      "image": "./assets/Moondeity X Interworld.jpeg",
+      "path": "./assets/audio/Moondeity X Interworld.mp3"
     },
     {
-        "song":"3 movie - Anirudh Ravichander",
-        "artist":"Anirudh Ravichandar",
-        "src":"./assets/audio/3 movie - Anirudh Ravichander.mp3"
+      "title": "GigaChad Theme",
+      "artist": "g3ox_em",
+      "image": "./assets/GigaChad.jpg",
+      "path": "./assets/audio/GigaChad.mp3"
     },
     {
-        "song":"3 Movie - Tamil",
-        "artist":"Anirudh Ravichandar",
-        "src":"./assets/audio/3 Movie - Tamil.mp3"
-    },
-    {
-        "song":"3 Movie Bgm Tamil",
-        "artist":"Anirudh Ravichandar",
-        "src":"./assets/audio/3 Movie Bgm Tamil.mp3"
+      "title": "Ghost Theme",
+      "artist": "KIIXSHI",
+      "image": "./assets/GHOST-.jpg",
+      "path": "./assets/audio/GHOST-.mp3"
     }
-]
+  ]
