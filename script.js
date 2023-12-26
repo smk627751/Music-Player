@@ -7,7 +7,7 @@ let play = document.getElementById('play')
 let prev = document.getElementById('prev')
 let next = document.getElementById('next')
 let playPause = document.getElementById('playPause')
-let heart = document.getElementById('add')
+let add = document.getElementById('add')
 let song = document.getElementById('song')
 let artist = document.getElementById('artist')
 let favorite = document.getElementById('favorites')
@@ -15,7 +15,7 @@ let favorites = document.getElementById('favoriteList')
 let bg = document.getElementById('bg')
 let nav = document.getElementById('nav')
 let shuffle = document.getElementById('shuffle')
-let playing = true
+let playing = false
 let index = 0;
 let songs = []
 let favoritesList = []
@@ -31,9 +31,9 @@ const makeRequest = async() => {
 }
 makeRequest()
 
-heart.addEventListener('click',() => {
+function refreshFavorites()
+{
     favorites.innerHTML = ""
-    favoritesList[index] = songs[index];
     favoritesList.forEach(favorite => {
         let song = document.createElement('div')
         song.className = 'details'
@@ -45,7 +45,14 @@ heart.addEventListener('click',() => {
         icon.appendChild(img)
         let songName = document.createElement('span')
         songName.textContent = favorite["title"]
-        song.append(icon,songName)
+        let remove = document.createElement('span')
+        remove.className = 'remove'
+        remove.textContent = 'x'
+        remove.addEventListener('click',() => {
+            delete favoritesList[favoritesList.indexOf(favorite)]
+            refreshFavorites()
+        })
+        song.append(icon,songName,remove)
         song.addEventListener('click',() => {
             load(favorite)
             audio.play()
@@ -54,6 +61,10 @@ heart.addEventListener('click',() => {
         })
         favorites.appendChild(song)
     })
+}
+add.addEventListener('click',() => {
+    favoritesList[index] = songs[index];
+    refreshFavorites()
 })
 shuffle.addEventListener('click',() => {
     for (let i = songs.length - 1; i > 0; i--) {
